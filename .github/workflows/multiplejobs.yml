@@ -1,7 +1,8 @@
 name: Test multiple jobs
-on: 
+on:  
     push:
-        branches: main
+        branches: master
+    
 jobs:
     devlope_branch_job:
         runs-on: ubuntu@latest

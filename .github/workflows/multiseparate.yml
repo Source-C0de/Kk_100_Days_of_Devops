@@ -2,7 +2,8 @@ name: Workflow for multiple jobs with separately running
 
 on: 
     push:
-        branches: main
+        branches: master
+
 
 jobs:
     developer_jobs:
@@ -11,7 +12,7 @@ jobs:
             - name: Print jobs name
               run: echo "This is devlop jobs"
     test_jobs:
-        needs: developer_jobs
+        needs: developer_jobs 
         runs-on: ubuntu@latest
         steps:
             - name: Print jobs name
