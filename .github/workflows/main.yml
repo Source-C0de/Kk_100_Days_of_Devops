@@ -6,15 +6,15 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout Repo
-              uses: actions/checkout@v4
-              
+            - name: Checkout Repo # actions example
+              uses: actions/checkout@v4 
+
             - name: Welcome message
               run: echo "Welcome to the ci_cd"
             - name: List file
               run: ls
             - name: Create folder
               run: mkdir NewFolder
-            - name: Read File
-              run: cat ./README.md
+            - name: Execute bash file
+              run: ./script.sh
             
