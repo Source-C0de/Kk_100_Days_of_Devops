@@ -1,0 +1,17 @@
+name: First test workflow
+
+on: push 
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome message
+              run: echo "Welcome to the ci_cd"
+            - name: List file
+              run: ls
+            - name: Create folder
+              run: mkdir NewFolder
+            - name: Read File
+              run: cat README.md
+            
