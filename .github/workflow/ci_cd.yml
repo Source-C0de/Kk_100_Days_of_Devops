@@ -1,0 +1,17 @@
+name: Workflow for CI_CD
+
+on: push
+
+jobs:
+  first_jobs: 
+  runs-on: ubuntu-latest
+  steps:
+    - name: Welcome Message
+      run: echo "This is my first workflow"
+    - name: List files
+      run: ls
+    - name: Create folder
+      run: mkdir NewFolder
+    - name: Read files
+      run: cat README.md
+    
